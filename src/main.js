@@ -4,6 +4,7 @@ import App from './App.vue';
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import Header from './components/common/Header.vue';
+import Content from './components/pages/Content.vue';
 import Footer from './components/common/Footer.vue';
 import { routes } from './routes';
 import store from './store/store';
@@ -38,4 +39,11 @@ new Vue({
   router,
   store,
   render: h => h(Footer)
+})
+
+new Vue({
+  el: '#content',
+  router,
+  store,
+  render: h => h(Content)
 })

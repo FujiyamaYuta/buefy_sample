@@ -1,18 +1,14 @@
 <template>
   <div id="app">
     <div id="header"></div>
-      <div class="container">
-        <div class="notification">
-          <router-view></router-view>
-        </div>
-      </div>
+    <router-view></router-view>
     <div id="footer"></div>
   </div>
 </template>
 
-<style>
-body{
-  background-color: whitesmoke;
+<style scope>
+#app{
+  background-color: black;
 }
 </style>
 
